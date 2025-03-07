@@ -1,0 +1,339 @@
+\documentclass{article}
+\usepackage[margin=0.5in, landscape]{geometry}  % Minimal margins and landscape by default
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{siunitx} % For proper formatting of scientific notation
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+\pagestyle{empty} % Remove page numbers to save space
+
+\begin{document}
+
+\begin{table}
+\centering
+\fontsize{7pt}{8pt}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{2.3cm}}
+\toprule
+\rowcolor{gray!20} \multirow{2}{*}{\textbf{Signal \& Production}} & \multicolumn{7}{c}{\textbf{Production Channels of Higgs to $\gamma\gamma$ ($H \rightarrow \gamma\gamma$, BR = $2.27 \times 10^{-3}$ [1])}} \\
+\cmidrule(lr){2-8}
+\rowcolor{gray!20} & \multirow{1}{*}{\textbf{ggH}} & \multirow{1}{*}{\textbf{VBF}} & \multicolumn{4}{c}{\textbf{VH}} & \multirow{1}{*}{\textbf{ttH}} \\
+\cmidrule(lr){4-7}
+\rowcolor{gray!20} &  &  & \textbf{Hadronic} & \textbf{Leptonic} & \textbf{Semi-lept.} & \textbf{MET} &  \\
+\midrule
+
+Signal Process & 
+$gg \rightarrow H \rightarrow \gamma\gamma$ & 
+$qq \rightarrow qqH \rightarrow qq\gamma\gamma$ & 
+$qq \rightarrow V \rightarrow V(\rightarrow qq)H(\rightarrow\gamma\gamma)$ & 
+$qq \rightarrow V \rightarrow V(\rightarrow \ell\ell)H(\rightarrow\gamma\gamma)$ & 
+$qq \rightarrow V \rightarrow V(\rightarrow \ell\nu)H(\rightarrow\gamma\gamma)$ & 
+$qq \rightarrow V \rightarrow V(\rightarrow \nu\nu)H(\rightarrow\gamma\gamma)$ & 
+$gg \rightarrow t\bar{t}H \rightarrow t\bar{t}\gamma\gamma$ \\
+\addlinespace[0.5ex]
+
+\cellcolor{gray!10}Cross Section $\sigma$ & 
+\cellcolor{gray!10}48.58 pb (87.6\%) [1] & 
+\cellcolor{gray!10}3.78 pb (7.1\%) [1] & 
+\cellcolor{gray!10}0.70 pb (1.2\%) [1] & 
+\cellcolor{gray!10}0.16 pb (0.3\%) [1] & 
+\cellcolor{gray!10}0.27 pb (0.5\%) [1] & 
+\cellcolor{gray!10}0.12 pb (0.2\%) [1] & 
+\cellcolor{gray!10}0.50 pb (0.9\%) [1] \\
+\addlinespace[0.5ex]
+
+\cellcolor{gray!10}Effective $\sigma \times$ BR & 
+\cellcolor{gray!10}110.3 fb [1] & 
+\cellcolor{gray!10}8.6 fb [1] & 
+\cellcolor{gray!10}1.6 fb [1] & 
+\cellcolor{gray!10}0.4 fb [1] & 
+\cellcolor{gray!10}0.6 fb [1] & 
+\cellcolor{gray!10}0.3 fb [1] & 
+\cellcolor{gray!10}1.1 fb [1] \\
+\midrule
+
+\textbf{QCD Multi-jet} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Multi-jet production via strong interaction with jets misidentified as photons} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow jj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)$ & 
+$pp \rightarrow jjjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+jj$ & 
+$pp \rightarrow jjjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+jj$ & 
+$pp \rightarrow jjjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+(\ell^{fake})$ & 
+$pp \rightarrow jjjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+\ell+E_T^{\mathrm{miss}}$ & 
+$pp \rightarrow jjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+E_T^{\mathrm{miss}}$ & 
+$pp \rightarrow jjjj \rightarrow (j \rightarrow \gamma)+(j \rightarrow \gamma)+b\bar{b}$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(\text{QCD dijet}) \sim 10^6$ nb; Jet$\rightarrow\gamma$ fake rate $\sim$10$^{-4}$ [2,3] & 
+$\sigma(\text{QCD 4j}) \sim 10^3$ nb; Forward topology suppression $\sim$10$^{-2}$ [2,4] & 
+$\sigma(\text{QCD 4j}) \sim 10^3$ nb; mMDT tagging eff. $\sim$30\% for QCD jets [4,5] & 
+$\sigma(\text{multi-jet+}\ell) \sim 10^2$ nb; Lepton fake rate from jets $\sim$10$^{-4}$ [6] & 
+$\sigma(\text{QCD}+\text{real }\ell) \sim 10$ nb; $E_T^{\mathrm{miss}}$ from mis-measurement [6,7] & 
+$\sigma(\text{QCD 3j}) \sim 10^4$ nb; Large $E_T^{\mathrm{miss}}$ probability $\sim$10$^{-3}$ [7,8] & 
+$\sigma(\text{QCD}+b\bar{b}) \sim 10^2$ nb; b-tagging efficiency $\sim$70\%, mistag rate $\sim$1\% [9,10] \\
+\midrule
+
+\textbf{$\gamma\gamma$ + jets} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Irreducible diphoton production with additional QCD radiation} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow \gamma\gamma$ & 
+$pp \rightarrow \gamma\gamma jj$ & 
+$pp \rightarrow \gamma\gamma jj$ & 
+$pp \rightarrow \gamma\gamma \ell\ell$ & 
+$pp \rightarrow \gamma\gamma \ell\nu$ & 
+$pp \rightarrow \gamma\gamma+E_T^{\mathrm{miss}}$ & 
+$pp \rightarrow \gamma\gamma b\bar{b}$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(\gamma\gamma) = 35.6 \pm 4.3$ pb; $p_T^{\gamma1,\gamma2} > 40,30$ GeV; $|\eta^{\gamma}| < 2.37$ [11,12] & 
+$\sigma(\gamma\gamma \text{jj}) = 5.9 \pm 0.8$ pb; VBF-like topology suppression $\sim$95\% [12,13] & 
+$\sigma(\gamma\gamma \text{jj}) = 5.9 \pm 0.8$ pb; V($\to$qq) tagging efficiency $\sim$40\% [12,13] & 
+$\sigma(\gamma\gamma \ell\ell) = 65 \pm 9$ fb; Z$\to\ell\ell$ (BR = 3.4\%) [12,14] & 
+$\sigma(\gamma\gamma \ell\nu) = 110 \pm 12$ fb; W$\to\ell\nu$ (BR = 10.8\%) [12,15] & 
+$\sigma(\gamma\gamma + E_T^{\mathrm{miss}}) = 89 \pm 10$ fb; Z$\to\nu\nu$ (BR = 20.0\%) [12,16] & 
+$\sigma(\gamma\gamma b\bar{b}) = 40 \pm 8$ fb; b-tagging working point: 70\% efficiency [12,17] \\
+\midrule
+
+\textbf{$\gamma$ + jet} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Single photon production with a jet misidentified as a second photon} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow \gamma j \rightarrow \gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow \gamma jjj \rightarrow \gamma + (j \rightarrow \gamma) + jj$ & 
+$pp \rightarrow \gamma jjj \rightarrow \gamma + (j \rightarrow \gamma) + jj$ & 
+$pp \rightarrow \gamma j\ell\ell \rightarrow \gamma + (j \rightarrow \gamma) + \ell\ell$ & 
+$pp \rightarrow \gamma j\ell \rightarrow \gamma + (j \rightarrow \gamma) + \ell + E_T^{\mathrm{miss}}$ & 
+$pp \rightarrow \gamma j + E_T^{\mathrm{miss}} \rightarrow \gamma + (j \rightarrow \gamma) + E_T^{\mathrm{miss}}$ & 
+$pp \rightarrow \gamma jb\bar{b} \rightarrow \gamma + (j \rightarrow \gamma) + b\bar{b}$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(\gamma+\text{jet}) = 5 \pm 0.6$ nb ($p_T^{\gamma} > 125$ GeV); Jet$\rightarrow\gamma$ fake rate = 10$^{-4}$ [3,18] & 
+$\sigma(\gamma+\text{3j}) = 0.8 \pm 0.1$ nb; VBF selection efficiency $\sim$0.1\% [18,19] & 
+$\sigma(\gamma+\text{3j}) = 0.8 \pm 0.1$ nb; V-tagging mistag rate $\sim$15\% [18,19] & 
+$\sigma(\gamma+\text{jet}+\ell\ell) = 5.3 \pm 0.8$ pb; Z$\to\ell\ell$ BR = 3.4\% [14,18] & 
+$\sigma(\gamma+\text{jet}+\ell\nu) = 18.5 \pm 2.3$ pb; W$\to\ell\nu$ BR = 10.8\% [15,18] & 
+$\sigma(\gamma+\text{jet}+\nu\nu) = 10.2 \pm 1.7$ pb; Z$\to\nu\nu$ BR = 20.0\% [16,18] & 
+$\sigma(\gamma+\text{jet}+b\bar{b}) = 45 \pm 6$ pb; b-tagging eff. = 70\%, mistag = 1\% [9,18] \\
+\midrule
+
+\textbf{W+$\gamma$} & 
+\multicolumn{7}{l}{\textbf{Background Process:} W boson production with a photon and a jet misidentified as a second photon} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow W\gamma \rightarrow \ell\nu\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow W\gamma jj \rightarrow \ell\nu\gamma + (j \rightarrow \gamma) + jj$ & 
+$pp \rightarrow W\gamma jj \rightarrow qq\gamma + (j \rightarrow \gamma) + jj$ & 
+$pp \rightarrow Z\gamma \rightarrow \ell\ell\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow W\gamma \rightarrow \ell\nu\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow Z\gamma \rightarrow \nu\nu\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow t\bar{t}\gamma \rightarrow bW^+\bar{b}W^-\gamma + (j \rightarrow \gamma)$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(W\gamma) = 37.1 \pm 4.2$ pb ($p_T^{\gamma} > 15$ GeV); W$\to\ell\nu$ BR = 10.8\% [15,20] & 
+$\sigma(W\gamma\text{jj}) = 4.8 \pm 0.7$ pb; VBF topology suppression $\sim$90\% [19,20] & 
+$\sigma(W\gamma\text{jj}) = 4.8 \pm 0.7$ pb; W$\to$qq BR = 67.4\% [19,20] & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb ($p_T^{\gamma} > 15$ GeV); Z$\to\ell\ell$ BR = 3.4\% [14,21] & 
+$\sigma(W\gamma) = 37.1 \pm 4.2$ pb; leptonic W BR = 10.8\% per flavor [15,20] & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb; Z$\to\nu\nu$ BR = 20.0\% [16,21] & 
+$\sigma(t\bar{t}\gamma) = 2.0 \pm 0.3$ pb; Jet$\rightarrow\gamma$ fake rate = 10$^{-4}$ [3,22] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}
+\centering
+\fontsize{7pt}{8pt}\selectfont
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{2.3cm}}
+\toprule
+\rowcolor{gray!20} \multirow{2}{*}{\textbf{Background Process}} & \multicolumn{7}{c}{\textbf{Production Channels of Higgs to $\gamma\gamma$ ($H \rightarrow \gamma\gamma$, BR = $2.27 \times 10^{-3}$ [1])}} \\
+\cmidrule(lr){2-8}
+\rowcolor{gray!20} & \multirow{1}{*}{\textbf{ggH}} & \multirow{1}{*}{\textbf{VBF}} & \multicolumn{4}{c}{\textbf{VH}} & \multirow{1}{*}{\textbf{ttH}} \\
+\cmidrule(lr){4-7}
+\rowcolor{gray!20} &  &  & \textbf{Hadronic} & \textbf{Leptonic} & \textbf{Semi-lept.} & \textbf{MET} &  \\
+\midrule
+
+\textbf{Z+$\gamma$} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Z boson production with a photon and a jet or electron misidentified as a second photon} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow Z\gamma \rightarrow \ell\ell\gamma + (j/e \rightarrow \gamma)$ & 
+$pp \rightarrow Z\gamma jj \rightarrow \ell\ell\gamma + (j/e \rightarrow \gamma) + jj$ & 
+$pp \rightarrow Z\gamma jj \rightarrow qq\gamma + (j \rightarrow \gamma) + jj$ & 
+$pp \rightarrow Z\gamma \rightarrow \ell\ell\gamma + (e \rightarrow \gamma)$ & 
+$pp \rightarrow Z\gamma \rightarrow \ell\ell\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow Z\gamma \rightarrow \nu\nu\gamma + (j \rightarrow \gamma)$ & 
+$pp \rightarrow t\bar{t}Z\gamma \rightarrow bW^+\bar{b}W^-\ell\ell\gamma + (j \rightarrow \gamma)$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb ($p_T^{\gamma} > 15$ GeV); Z$\to\ell\ell$ BR = 3.4\% [14,21] & 
+$\sigma(Z\gamma\text{jj}) = 1.7 \pm 0.3$ pb; VBF selection efficiency $\sim$5\% [19,21] & 
+$\sigma(Z\gamma\text{jj}) = 1.7 \pm 0.3$ pb; Z$\to$qq BR = 69.9\% [19,21] & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb; e$\to\gamma$ misID rate = 2-5\% [21,23] & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb; Jet$\to\gamma$ fake rate = 10$^{-4}$ [3,21] & 
+$\sigma(Z\gamma) = 11.6 \pm 1.2$ pb; Z$\to\nu\nu$ BR = 20.0\% [16,21] & 
+$\sigma(t\bar{t}Z\gamma) = 0.03 \pm 0.01$ pb; Z$\to\ell\ell$ BR = 3.4\% [14,22] \\
+\midrule
+
+\textbf{$\text{t}\overline{\text{t}}$+$\gamma\gamma$} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Top-quark pair production with two photons} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow bW^+\bar{b}W^-\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow bW^+\bar{b}W^-\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow bW^+\bar{b}W^-\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow b\ell^+\nu\bar{b}\ell^-\bar{\nu}\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow b\ell\nu\bar{b}qq'\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow b\tau\nu\bar{b}qq'\gamma\gamma$ & 
+$pp \rightarrow t\bar{t}\gamma\gamma \rightarrow bW^+\bar{b}W^-\gamma\gamma$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; b-veto efficiency $\sim$80\% [17,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; VBF topology suppression $\sim$99\% [17,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; W$\to$qq BR = 67.4\% [17,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; W$\to\ell\nu$ BR = 10.8\% per flavor [15,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; W$\to\ell\nu$ BR = 10.8\% [15,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; W$\to\tau\nu$ BR = 10.8\% [15,22] & 
+$\sigma(t\bar{t}\gamma\gamma) = 0.012 \pm 0.003$ pb; ttH ($\sigma = 0.5$ pb) [1,22] \\
+\midrule
+
+\textbf{Di-boson (WW, ZZ)} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Production of WW or ZZ pairs with leptons/jets misidentified as photons} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+$pp \rightarrow WW/ZZ \rightarrow \ell\nu\ell\nu/\ell\ell\ell\ell + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow WW/ZZ+jj \rightarrow 4\ell/4q + jj + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow WW/ZZ \rightarrow 4q + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow ZZ \rightarrow 4\ell + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow WW \rightarrow \ell\nu qq + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow ZZ \rightarrow \nu\nu\ell\ell + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ & 
+$pp \rightarrow t\bar{t}WW \rightarrow bW^+\bar{b}W^-WW + (e \rightarrow \gamma) + (e \rightarrow \gamma)$ \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+$\sigma(WW) = 128.5 \pm 10.8$ pb; $\sigma(ZZ) = 17.3 \pm 1.7$ pb; e$\to\gamma$ misID = 2-5\% [23,24,25] & 
+$\sigma(WW\text{jj}) = 10.8 \pm 1.5$ pb; $\sigma(ZZ\text{jj}) = 1.8 \pm 0.3$ pb [19,24,25] & 
+$\sigma(WW) = 128.5 \pm 10.8$ pb; $\sigma(ZZ) = 17.3 \pm 1.7$ pb; Hadronic BR $\sim$50\% [24,25] & 
+$\sigma(ZZ) = 17.3 \pm 1.7$ pb; ZZ$\to$4$\ell$ BR = 0.4\% [14,25] & 
+$\sigma(WW) = 128.5 \pm 10.8$ pb; WW$\to\ell\nu$qq BR = 43.8\% [15,24] & 
+$\sigma(ZZ) = 17.3 \pm 1.7$ pb; ZZ$\to\nu\nu\ell\ell$ BR = 2.7\% [16,25] & 
+$\sigma(t\bar{t}WW) = 0.01 \pm 0.003$ pb; e$\to\gamma$ misID rate = 2-5\% [22,23] \\
+\midrule
+
+\textbf{Pileup-related} & 
+\multicolumn{7}{l}{\textbf{Background Process:} Backgrounds arising from multiple pp interactions per bunch crossing (avg. pileup $\mu \sim$ 30-60 at LHC Run 2)} \\
+\addlinespace[0.3ex]
+
+Decay Signature & 
+Multiple vertices producing fake signals; Vertex misassignment; $z_{\text{vtx}}$ confusion & 
+Pileup jets misidentified as VBF forward jets; Wrong vertex association; Timing issues & 
+Pileup contamination in large-R jets; Fake substructure; Soft radiation contamination & 
+Lepton isolation degradation; Vertex misattribution; Activity from multiple collisions & 
+Lepton trigger efficiency affected; $E_T^{\mathrm{miss}}$ mismeasurement; Resolution effects & 
+False $E_T^{\mathrm{miss}}$ from pileup; Resolution degradation; Misreconstructed vertices & 
+Complex final state vulnerable to pileup; Jet misassignment; Multiple interaction points \\
+\addlinespace[0.3ex]
+
+Cross-section \& BR info & 
+Vertex resolution $\sim$0.3 mm; In-time pileup interactions $\mu=38$ (avg. Run 2) [26,27] & 
+Pileup jet misID rate $\sim$2\% for forward jets; $\eta$-dependent PU contamination [26,27] & 
+Jet Vertex Tagger (JVT) efficiency $\sim$95\%, PU jet rejection $\sim$98\% [27,28] & 
+Isolation efficiency loss $\sim$5\% per $\Delta\mu=10$; Pileup-robust ID techniques [26,29] & 
+PU impact on $E_T^{\mathrm{miss}}$ resolution: $\sigma = 19.0$ GeV + 0.3$\sqrt{\Sigma E_T}$ [27,30] & 
+PUPPI/TST techniques improve $E_T^{\mathrm{miss}}$ resolution by $\sim$30\% [27,30] & 
+ML-based PU mitigation improves ttH S/B by $\sim$15\%; $\beta^*$ variable rejection $\sim$95\% [26,27] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\section*{References}
+
+\begin{enumerate}
+    \item ATLAS Collaboration, ``Measurements of Higgs boson properties in the diphoton decay channel with 36 fb$^{-1}$ of $pp$ collision data at $\sqrt{s} = 13$ TeV with the ATLAS detector,'' Phys.\ Rev.\ D 98 (2018) 052005.
+    
+    \item CMS Collaboration, ``Jet Production Rates in Association with W and Z Bosons in pp Collisions at $\sqrt{s} = 7$ TeV,'' JHEP 01 (2012) 010.
+    
+    \item ATLAS Collaboration, ``Measurement of the production cross section of pairs of isolated photons in $pp$ collisions at 13 TeV with the ATLAS detector,'' JHEP 08 (2021) 005.
+    
+    \item CMS Collaboration, ``Studies of jet mass in dijet and W/Z+jet events,'' JHEP 05 (2013) 090.
+    
+    \item ATLAS Collaboration, ``Performance of jet substructure techniques for large-$R$ jets in proton-proton collisions at $\sqrt{s} = 7$ TeV using the ATLAS detector,'' JHEP 09 (2013) 076.
+    
+    \item CMS Collaboration, ``Search for heavy lepton partners of neutrinos in pp collisions at $\sqrt{s}=8$ TeV, in the context of type III seesaw mechanism,'' Phys.\ Lett.\ B 718 (2012) 348.
+    
+    \item ATLAS Collaboration, ``Performance of missing transverse momentum reconstruction with the ATLAS detector using proton-proton collisions at $\sqrt{s} = 13$ TeV,'' Eur.\ Phys.\ J.\ C 78 (2018) 903.
+    
+    \item CMS Collaboration, ``Performance of the CMS missing transverse momentum reconstruction in pp data at $\sqrt{s} = 8$ TeV,'' JINST 10 (2015) P02006.
+    
+    \item ATLAS Collaboration, ``ATLAS b-jet identification performance and efficiency measurement with $t\bar{t}$ events in $pp$ collisions at $\sqrt{s} = 13$ TeV,'' Eur.\ Phys.\ J.\ C 79 (2019) 970.
+    
+    \item CMS Collaboration, ``Identification of heavy-flavour jets with the CMS detector in pp collisions at 13 TeV,'' JINST 13 (2018) P05011.
+    
+    \item ATLAS Collaboration, ``Measurement of the production cross section of isolated photon pairs in $pp$ collisions at $\sqrt{s} = 13$ TeV with the ATLAS detector,'' JHEP 08 (2021) 005.
+    
+    \item CMS Collaboration, ``Measurements of the $pp \to \gamma\gamma$ and $pp \to \gamma\gamma\gamma$ cross sections and search for new physics in the diphoton channel in proton-proton collisions at $\sqrt{s} = 13$ TeV,'' JHEP 05 (2022) 137.
+    
+    \item T. Gleisberg et al., ``Event generation with SHERPA 1.1,'' JHEP 02 (2009) 007.
+    
+    \item Particle Data Group, ``Review of Particle Physics,'' Prog.\ Theor.\ Exp.\ Phys. 2022, 083C01 (2022).
+    
+    \item CMS Collaboration, ``Measurement of the inclusive W and Z production cross sections in pp collisions at $\sqrt{s} = 13$ TeV,'' JHEP 10 (2022) 188.
+    
+    \item ATLAS Collaboration, ``Measurement of detector-corrected observables sensitive to the anomalous production of events with jets and large missing transverse momentum in $pp$ collisions at $\sqrt{s} = 13$ TeV using the ATLAS detector,'' Eur.\ Phys.\ J.\ C 77 (2017) 765.
+    
+    \item CMS Collaboration, ``Measurement of the associated production of a Higgs boson and a pair of top-antitop quarks with the Higgs boson decaying to two photons in proton-proton collisions at $\sqrt{s} = 13$ TeV,'' Phys.\ Rev.\ D 104 (2021) 052004.
+    
+    \item ATLAS Collaboration, ``Measurement of the inclusive isolated-photon cross section in $pp$ collisions at $\sqrt{s} = 13$ TeV using 36 fb$^{-1}$ of ATLAS data,'' JHEP 10 (2019) 203.
+    
+    \item ATLAS Collaboration, ``Measurements of Vector Boson Fusion Production of a Higgs Boson in the $H \rightarrow \gamma\gamma$ Channel in $pp$ Collisions at $\sqrt{s} = 13$ TeV with the ATLAS Detector,'' Phys.\ Lett.\ B 809 (2020) 135754.
+    
+    \item ATLAS Collaboration, ``Measurements of $W\gamma$ and $Z\gamma$ production in $pp$ collisions at $\sqrt{s}=7$ TeV with the ATLAS detector at the LHC,'' Phys.\ Rev.\ D 87 (2013) 112003.
+    
+    \item CMS Collaboration, ``Measurement of differential cross sections for Z boson production in association with jets in proton-proton collisions at $\sqrt{s} = 13$ TeV,'' Eur.\ Phys.\ J.\ C 78 (2018) 965.
+    
+    \item CMS Collaboration, ``Measurement of the $t\bar{t}$ production cross section using events with one lepton and at least one jet in pp collisions at $\sqrt{s} = 13$ TeV,'' JHEP 09 (2017) 051.
+    
+    \item CMS Collaboration, ``Performance of photon reconstruction and identification with the CMS detector in proton-proton collisions at $\sqrt{s} = 13$ TeV,'' JINST 13 (2018) P10005.
+    
+    \item ATLAS Collaboration, ``Measurement of the production cross section for a Higgs boson in association with a vector boson in the $H \rightarrow WW^* \rightarrow \ell\nu\ell\nu$ channel in $pp$ collisions at $\sqrt{s} = 13$ TeV with the ATLAS detector,'' Phys.\ Lett.\ B 798 (2019) 134949.
+    
+    \item ATLAS Collaboration, ``Measurement of ZZ production in the $\ell\ell\nu\nu$ final state with the ATLAS detector in $pp$ collisions at $\sqrt{s} = 13$ TeV,'' JHEP 10 (2019) 127.
+    
+    \item ATLAS Collaboration, ``Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC,'' Phys.\ Lett.\ B 716 (2012) 1.
+    
+    \item CMS Collaboration, ``Pileup mitigation at CMS in 13 TeV data,'' JINST 15 (2020) P09018.
+    
+    \item ATLAS Collaboration, ``Performance of pile-up mitigation techniques for jets in $pp$ collisions at $\sqrt{s} = 8$ TeV using the ATLAS detector,'' Eur.\ Phys.\ J.\ C 76 (2016) 581.
+    
+    \item ATLAS Collaboration, ``Performance of electron and photon identification in ATLAS using Run 2 data,'' Eur.\ Phys.\ J.\ C 82 (2022) 206.
+    
+    \item CMS Collaboration, ``Performance of missing transverse momentum reconstruction in proton-proton collisions at $\sqrt{s} = 13$ TeV using the CMS detector,'' JINST 14 (2019) P07004.
+\end{enumerate}
+
+\end{document}
